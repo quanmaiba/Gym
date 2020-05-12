@@ -1,0 +1,12 @@
+D:\Mini Project\API\GymManagement\GymManagement.Repository\bin\Debug\netcoreapp2.2\GymManagement.Repository.deps.json
+D:\Mini Project\API\GymManagement\GymManagement.Repository\bin\Debug\netcoreapp2.2\GymManagement.Repository.dll
+D:\Mini Project\API\GymManagement\GymManagement.Repository\bin\Debug\netcoreapp2.2\GymManagement.Repository.pdb
+D:\Mini Project\API\GymManagement\GymManagement.Repository\bin\Debug\netcoreapp2.2\GymManagement.Domain.dll
+D:\Mini Project\API\GymManagement\GymManagement.Repository\bin\Debug\netcoreapp2.2\GymManagement.Domain.pdb
+D:\Mini Project\API\GymManagement\GymManagement.Repository\obj\Debug\netcoreapp2.2\GymManagement.Repository.csprojAssemblyReference.cache
+D:\Mini Project\API\GymManagement\GymManagement.Repository\obj\Debug\netcoreapp2.2\GymManagement.Repository.csproj.CoreCompileInputs.cache
+D:\Mini Project\API\GymManagement\GymManagement.Repository\obj\Debug\netcoreapp2.2\GymManagement.Repository.AssemblyInfoInputs.cache
+D:\Mini Project\API\GymManagement\GymManagement.Repository\obj\Debug\netcoreapp2.2\GymManagement.Repository.AssemblyInfo.cs
+D:\Mini Project\API\GymManagement\GymManagement.Repository\obj\Debug\netcoreapp2.2\GymManagement.Repository.csproj.CopyComplete
+D:\Mini Project\API\GymManagement\GymManagement.Repository\obj\Debug\netcoreapp2.2\GymManagement.Repository.dll
+D:\Mini Project\API\GymManagement\GymManagement.Repository\obj\Debug\netcoreapp2.2\GymManagement.Repository.pdb

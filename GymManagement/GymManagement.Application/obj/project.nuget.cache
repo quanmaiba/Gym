@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "ETrnsB4JlKR43NZkvRdvFFx+0EM0UxDye1mIzLS2Hz6i4EPcA/c8p8DHyy9pBVJ2uhAv6QNly5DfGiAidks51Q==",
+  "success": true,
+  "projectFilePath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Application\\GymManagement.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Quan\\.nuget\\packages\\microsoft.netcore.app\\2.2.0\\microsoft.netcore.app.2.2.0.nupkg.sha512",
+    "C:\\Users\\Quan\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.2.0\\microsoft.netcore.dotnetapphost.2.2.0.nupkg.sha512",
+    "C:\\Users\\Quan\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.2.0\\microsoft.netcore.dotnethostpolicy.2.2.0.nupkg.sha512",
+    "C:\\Users\\Quan\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.2.0\\microsoft.netcore.dotnethostresolver.2.2.0.nupkg.sha512",
+    "C:\\Users\\Quan\\.nuget\\packages\\microsoft.netcore.platforms\\2.2.0\\microsoft.netcore.platforms.2.2.0.nupkg.sha512",
+    "C:\\Users\\Quan\\.nuget\\packages\\microsoft.netcore.targets\\2.0.0\\microsoft.netcore.targets.2.0.0.nupkg.sha512",
+    "C:\\Users\\Quan\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

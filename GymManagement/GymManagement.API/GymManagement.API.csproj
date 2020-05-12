@@ -11,8 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GymManagement.Application\GymManagement.Application.csproj" />
     <ProjectReference Include="..\GymManagement.Domain\GymManagement.Domain.csproj" />
-    <ProjectReference Include="..\GymManagement.Repository\GymManagement.Repository.csproj" />
+    <ProjectReference Include="..\GymManagement.Infrastructure\GymManagement.Infrastructure.csproj" />
     <ProjectReference Include="..\GymManagement.Service\GymManagement.Service.csproj" />
   </ItemGroup>
 

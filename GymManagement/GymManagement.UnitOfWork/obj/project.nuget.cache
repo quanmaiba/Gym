@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Dwtl9pPMt0BxskVNneBq28e3736tygq8qOLFLPGwVLf8MFXWlkL8QqXEzMvpC/OQCEmNfLyf8bCkUO8hKyGfLg==",
+  "dgSpecHash": "1cHggryrPN0owKzHoY/3CVsWSL0ItL9T8M2WK+CT/j37tmDrGQMefqKyv94Jz3uaghGbLdv5sFbtlOkjZPENow==",
   "success": true,
-  "projectFilePath": "D:\\Mini Project\\API\\GymManagement\\GymManagement.UnitOfWork\\GymManagement.UnitOfWork.csproj",
+  "projectFilePath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.UnitOfWork\\GymManagement.UnitOfWork.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

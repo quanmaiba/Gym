@@ -4451,6 +4451,19 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "GymManagement.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "GymManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GymManagement.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GymManagement.Application.dll": {}
+        }
+      },
       "GymManagement.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -4461,29 +4474,30 @@
           "bin/placeholder/GymManagement.Domain.dll": {}
         }
       },
-      "GymManagement.Repository/1.0.0": {
+      "GymManagement.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "Dapper": "2.0.4",
-          "GymManagement.Domain": "1.0.0",
+          "GymManagement.Application": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.2",
           "Microsoft.EntityFrameworkCore": "2.2.0",
+          "Microsoft.Extensions.Configuration": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection": "2.2.0",
           "System.Data.SqlClient": "4.6.1"
         },
         "compile": {
-          "bin/placeholder/GymManagement.Repository.dll": {}
+          "bin/placeholder/GymManagement.Infrastructure.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GymManagement.Repository.dll": {}
+          "bin/placeholder/GymManagement.Infrastructure.dll": {}
         }
       },
       "GymManagement.Service/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
-          "GymManagement.Domain": "1.0.0",
-          "GymManagement.Repository": "1.0.0"
+          "GymManagement.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/GymManagement.Service.dll": {}
@@ -7537,7 +7551,7 @@
       ]
     },
     "runtime.native.System.IO.Compression/4.3.0": {
-      "sha512": "b+V9JC/Ii3sR659flBeaBJww111425tgjcDS1k+hqV4sGh9FALRDBvJnDtQ895gAzpPTUOFDHdqaZ2Et7BpZMg==",
+      "sha512": "INBPonS5QPEgn7naufQFXJEp3zX6L4bwHgJ/ZH78aBTpeNfQMtf7C6VrAFhlq2xxWBveIOWyFzQjJ8XzHMhdOQ==",
       "type": "package",
       "path": "runtime.native.system.io.compression/4.3.0",
       "files": [
@@ -7644,11 +7658,12 @@
       ]
     },
     "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "T5NvFgmHX0WH4c7lP72krsnk+IJI10vJf2j2twGE+5QBRA4RyRAgD+ZjEgdmpLOjW4B+nZGaadewTCUcR899OQ==",
+      "sha512": "nyFNiCk/r+VOiIqreLix8yN+q3Wga9+SE8BCgkf+2BwEKiNx6DyvFjCgkfV743/grxv8jHJ8gUK4XEQw7yzRYg==",
       "type": "package",
       "path": "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -7982,11 +7997,12 @@
       ]
     },
     "System.Collections.NonGeneric/4.3.0": {
-      "sha512": "LE/oChpRvkSi3U25u0KnJcI44JeDZ1QJCyN4qFDx2uusEypdqR24w7lKYw21eYe5esuCBuc862wRmpF63Yy1KQ==",
+      "sha512": "prtjIEMhGUnQq6RnPEYLpFt8AtLbp9yq2zxOSrY7KJJZrw25Fi97IzBqY7iqssbM61Ek5b8f3MG/sG1N2sN5KA==",
       "type": "package",
       "path": "system.collections.nongeneric/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12144,15 +12160,20 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "GymManagement.Application/1.0.0": {
+      "type": "project",
+      "path": "../GymManagement.Application/GymManagement.Application.csproj",
+      "msbuildProject": "../GymManagement.Application/GymManagement.Application.csproj"
+    },
     "GymManagement.Domain/1.0.0": {
       "type": "project",
       "path": "../GymManagement.Domain/GymManagement.Domain.csproj",
       "msbuildProject": "../GymManagement.Domain/GymManagement.Domain.csproj"
     },
-    "GymManagement.Repository/1.0.0": {
+    "GymManagement.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../GymManagement.Repository/GymManagement.Repository.csproj",
-      "msbuildProject": "../GymManagement.Repository/GymManagement.Repository.csproj"
+      "path": "../GymManagement.Infrastructure/GymManagement.Infrastructure.csproj",
+      "msbuildProject": "../GymManagement.Infrastructure/GymManagement.Infrastructure.csproj"
     },
     "GymManagement.Service/1.0.0": {
       "type": "project",
@@ -12162,8 +12183,9 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "GymManagement.Application >= 1.0.0",
       "GymManagement.Domain >= 1.0.0",
-      "GymManagement.Repository >= 1.0.0",
+      "GymManagement.Infrastructure >= 1.0.0",
       "GymManagement.Service >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
@@ -12171,23 +12193,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\quanmb\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Quan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Mini Project\\API\\GymManagement\\GymManagement.API\\GymManagement.API.csproj",
+      "projectUniqueName": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.API\\GymManagement.API.csproj",
       "projectName": "GymManagement.API",
-      "projectPath": "D:\\Mini Project\\API\\GymManagement\\GymManagement.API\\GymManagement.API.csproj",
-      "packagesPath": "C:\\Users\\quanmb\\.nuget\\packages\\",
-      "outputPath": "D:\\Mini Project\\API\\GymManagement\\GymManagement.API\\obj\\",
+      "projectPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.API\\GymManagement.API.csproj",
+      "packagesPath": "C:\\Users\\Quan\\.nuget\\packages\\",
+      "outputPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.API\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\quanmb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Quan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12200,14 +12218,17 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\Mini Project\\API\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj": {
-              "projectPath": "D:\\Mini Project\\API\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj"
+            "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Application\\GymManagement.Application.csproj": {
+              "projectPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Application\\GymManagement.Application.csproj"
             },
-            "D:\\Mini Project\\API\\GymManagement\\GymManagement.Repository\\GymManagement.Repository.csproj": {
-              "projectPath": "D:\\Mini Project\\API\\GymManagement\\GymManagement.Repository\\GymManagement.Repository.csproj"
+            "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj": {
+              "projectPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj"
             },
-            "D:\\Mini Project\\API\\GymManagement\\GymManagement.Service\\GymManagement.Service.csproj": {
-              "projectPath": "D:\\Mini Project\\API\\GymManagement\\GymManagement.Service\\GymManagement.Service.csproj"
+            "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj": {
+              "projectPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj"
+            },
+            "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Service\\GymManagement.Service.csproj": {
+              "projectPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Service\\GymManagement.Service.csproj"
             }
           }
         }

@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Mini Project\\API\\GymManagement\\GymManagement.Service\\GymManagement.Service.csproj": {}
+    "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Service\\GymManagement.Service.csproj": {}
   },
   "projects": {
-    "D:\\Mini Project\\API\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj": {
+    "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Mini Project\\API\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj",
+        "projectUniqueName": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj",
         "projectName": "GymManagement.Domain",
-        "projectPath": "D:\\Mini Project\\API\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj",
-        "packagesPath": "C:\\Users\\quanmb\\.nuget\\packages\\",
-        "outputPath": "D:\\Mini Project\\API\\GymManagement\\GymManagement.Domain\\obj\\",
+        "projectPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\Quan\\.nuget\\packages\\",
+        "outputPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\quanmb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Quan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,98 +59,17 @@
         }
       }
     },
-    "D:\\Mini Project\\API\\GymManagement\\GymManagement.Repository\\GymManagement.Repository.csproj": {
+    "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Service\\GymManagement.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Mini Project\\API\\GymManagement\\GymManagement.Repository\\GymManagement.Repository.csproj",
-        "projectName": "GymManagement.Repository",
-        "projectPath": "D:\\Mini Project\\API\\GymManagement\\GymManagement.Repository\\GymManagement.Repository.csproj",
-        "packagesPath": "C:\\Users\\quanmb\\.nuget\\packages\\",
-        "outputPath": "D:\\Mini Project\\API\\GymManagement\\GymManagement.Repository\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\quanmb\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp2.2"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp2.2": {
-            "projectReferences": {
-              "D:\\Mini Project\\API\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj": {
-                "projectPath": "D:\\Mini Project\\API\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp2.2": {
-          "dependencies": {
-            "Dapper": {
-              "target": "Package",
-              "version": "[2.0.4, )"
-            },
-            "Microsoft.AspNetCore.Mvc.Core": {
-              "target": "Package",
-              "version": "[2.2.2, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.6.1, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\Mini Project\\API\\GymManagement\\GymManagement.Service\\GymManagement.Service.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Mini Project\\API\\GymManagement\\GymManagement.Service\\GymManagement.Service.csproj",
+        "projectUniqueName": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Service\\GymManagement.Service.csproj",
         "projectName": "GymManagement.Service",
-        "projectPath": "D:\\Mini Project\\API\\GymManagement\\GymManagement.Service\\GymManagement.Service.csproj",
-        "packagesPath": "C:\\Users\\quanmb\\.nuget\\packages\\",
-        "outputPath": "D:\\Mini Project\\API\\GymManagement\\GymManagement.Service\\obj\\",
+        "projectPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Service\\GymManagement.Service.csproj",
+        "packagesPath": "C:\\Users\\Quan\\.nuget\\packages\\",
+        "outputPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Service\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\quanmb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Quan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -166,11 +82,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "D:\\Mini Project\\API\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj": {
-                "projectPath": "D:\\Mini Project\\API\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj"
-              },
-              "D:\\Mini Project\\API\\GymManagement\\GymManagement.Repository\\GymManagement.Repository.csproj": {
-                "projectPath": "D:\\Mini Project\\API\\GymManagement\\GymManagement.Repository\\GymManagement.Repository.csproj"
+              "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj": {
+                "projectPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj"
               }
             }
           }

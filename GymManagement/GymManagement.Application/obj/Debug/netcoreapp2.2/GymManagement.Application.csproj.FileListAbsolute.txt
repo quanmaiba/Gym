@@ -1,0 +1,12 @@
+E:\Mini Project\Gym\GymManagement\GymManagement.Application\bin\Debug\netcoreapp2.2\GymManagement.Application.deps.json
+E:\Mini Project\Gym\GymManagement\GymManagement.Application\bin\Debug\netcoreapp2.2\GymManagement.Application.dll
+E:\Mini Project\Gym\GymManagement\GymManagement.Application\bin\Debug\netcoreapp2.2\GymManagement.Application.pdb
+E:\Mini Project\Gym\GymManagement\GymManagement.Application\bin\Debug\netcoreapp2.2\GymManagement.Domain.dll
+E:\Mini Project\Gym\GymManagement\GymManagement.Application\bin\Debug\netcoreapp2.2\GymManagement.Domain.pdb
+E:\Mini Project\Gym\GymManagement\GymManagement.Application\obj\Debug\netcoreapp2.2\GymManagement.Application.csprojAssemblyReference.cache
+E:\Mini Project\Gym\GymManagement\GymManagement.Application\obj\Debug\netcoreapp2.2\GymManagement.Application.csproj.CoreCompileInputs.cache
+E:\Mini Project\Gym\GymManagement\GymManagement.Application\obj\Debug\netcoreapp2.2\GymManagement.Application.AssemblyInfoInputs.cache
+E:\Mini Project\Gym\GymManagement\GymManagement.Application\obj\Debug\netcoreapp2.2\GymManagement.Application.AssemblyInfo.cs
+E:\Mini Project\Gym\GymManagement\GymManagement.Application\obj\Debug\netcoreapp2.2\GymManagement.Application.csproj.CopyComplete
+E:\Mini Project\Gym\GymManagement\GymManagement.Application\obj\Debug\netcoreapp2.2\GymManagement.Application.dll
+E:\Mini Project\Gym\GymManagement\GymManagement.Application\obj\Debug\netcoreapp2.2\GymManagement.Application.pdb

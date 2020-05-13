@@ -11,3 +11,17 @@ E:\Mini Project\Gym\GymManagement\GymManagement.Infrastructure\obj\Debug\netcore
 E:\Mini Project\Gym\GymManagement\GymManagement.Infrastructure\obj\Debug\netcoreapp2.2\GymManagement.Infrastructure.csproj.CopyComplete
 E:\Mini Project\Gym\GymManagement\GymManagement.Infrastructure\obj\Debug\netcoreapp2.2\GymManagement.Infrastructure.dll
 E:\Mini Project\Gym\GymManagement\GymManagement.Infrastructure\obj\Debug\netcoreapp2.2\GymManagement.Infrastructure.pdb
+D:\DuAnCaNhan\GymManagement\GymManagement.Infrastructure\bin\Debug\netcoreapp2.2\GymManagement.Infrastructure.deps.json
+D:\DuAnCaNhan\GymManagement\GymManagement.Infrastructure\bin\Debug\netcoreapp2.2\GymManagement.Infrastructure.dll
+D:\DuAnCaNhan\GymManagement\GymManagement.Infrastructure\bin\Debug\netcoreapp2.2\GymManagement.Infrastructure.pdb
+D:\DuAnCaNhan\GymManagement\GymManagement.Infrastructure\bin\Debug\netcoreapp2.2\GymManagement.Application.dll
+D:\DuAnCaNhan\GymManagement\GymManagement.Infrastructure\bin\Debug\netcoreapp2.2\GymManagement.Domain.dll
+D:\DuAnCaNhan\GymManagement\GymManagement.Infrastructure\bin\Debug\netcoreapp2.2\GymManagement.Application.pdb
+D:\DuAnCaNhan\GymManagement\GymManagement.Infrastructure\bin\Debug\netcoreapp2.2\GymManagement.Domain.pdb
+D:\DuAnCaNhan\GymManagement\GymManagement.Infrastructure\obj\Debug\netcoreapp2.2\GymManagement.Infrastructure.csprojAssemblyReference.cache
+D:\DuAnCaNhan\GymManagement\GymManagement.Infrastructure\obj\Debug\netcoreapp2.2\GymManagement.Infrastructure.csproj.CoreCompileInputs.cache
+D:\DuAnCaNhan\GymManagement\GymManagement.Infrastructure\obj\Debug\netcoreapp2.2\GymManagement.Infrastructure.AssemblyInfoInputs.cache
+D:\DuAnCaNhan\GymManagement\GymManagement.Infrastructure\obj\Debug\netcoreapp2.2\GymManagement.Infrastructure.AssemblyInfo.cs
+D:\DuAnCaNhan\GymManagement\GymManagement.Infrastructure\obj\Debug\netcoreapp2.2\GymManagement.Infrastructure.csproj.CopyComplete
+D:\DuAnCaNhan\GymManagement\GymManagement.Infrastructure\obj\Debug\netcoreapp2.2\GymManagement.Infrastructure.dll
+D:\DuAnCaNhan\GymManagement\GymManagement.Infrastructure\obj\Debug\netcoreapp2.2\GymManagement.Infrastructure.pdb

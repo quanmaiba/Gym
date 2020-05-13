@@ -1,8 +1,8 @@
-﻿using GymManagement.Domain.Response.Member;
+﻿using GymManagement.Domain.Entities;
 
 namespace GymManagement.Application.Interfaces
 {
-    public interface IMemberRepository : IGenericRepository<MemberItem>
+    public interface IMemberRepository : IGenericRepository<Member>
     {
     }
 }

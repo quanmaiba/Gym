@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj": {}
+    "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj": {}
   },
   "projects": {
-    "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Application\\GymManagement.Application.csproj": {
+    "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Application\\GymManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Application\\GymManagement.Application.csproj",
+        "projectUniqueName": "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Application\\GymManagement.Application.csproj",
         "projectName": "GymManagement.Application",
-        "projectPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Application\\GymManagement.Application.csproj",
-        "packagesPath": "C:\\Users\\Quan\\.nuget\\packages\\",
-        "outputPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Application\\obj\\",
+        "projectPath": "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Application\\GymManagement.Application.csproj",
+        "packagesPath": "C:\\Users\\quanmb\\.nuget\\packages\\",
+        "outputPath": "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Quan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\quanmb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +30,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj": {
-                "projectPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj"
+              "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj": {
+                "projectPath": "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj"
               }
             }
           }
@@ -42,6 +45,26 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.0.0-preview3, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[9.0.0-preview3, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -63,17 +86,20 @@
         }
       }
     },
-    "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj": {
+    "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj",
+        "projectUniqueName": "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj",
         "projectName": "GymManagement.Domain",
-        "projectPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj",
-        "packagesPath": "C:\\Users\\Quan\\.nuget\\packages\\",
-        "outputPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Domain\\obj\\",
+        "projectPath": "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\quanmb\\.nuget\\packages\\",
+        "outputPath": "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Quan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\quanmb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -118,17 +144,20 @@
         }
       }
     },
-    "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj": {
+    "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj",
+        "projectUniqueName": "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj",
         "projectName": "GymManagement.Infrastructure",
-        "projectPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Quan\\.nuget\\packages\\",
-        "outputPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Infrastructure\\obj\\",
+        "projectPath": "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Infrastructure\\GymManagement.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\quanmb\\.nuget\\packages\\",
+        "outputPath": "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Quan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\quanmb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -141,8 +170,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Application\\GymManagement.Application.csproj": {
-                "projectPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Application\\GymManagement.Application.csproj"
+              "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Application\\GymManagement.Application.csproj": {
+                "projectPath": "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Application\\GymManagement.Application.csproj"
               }
             }
           }

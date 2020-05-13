@@ -686,19 +686,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Quan\\.nuget\\packages\\": {}
+    "C:\\Users\\quanmb\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj",
+      "projectUniqueName": "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj",
       "projectName": "GymManagement.Domain",
-      "projectPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj",
-      "packagesPath": "C:\\Users\\Quan\\.nuget\\packages\\",
-      "outputPath": "E:\\Mini Project\\Gym\\GymManagement\\GymManagement.Domain\\obj\\",
+      "projectPath": "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Domain\\GymManagement.Domain.csproj",
+      "packagesPath": "C:\\Users\\quanmb\\.nuget\\packages\\",
+      "outputPath": "D:\\DuAnCaNhan\\GymManagement\\GymManagement.Domain\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Quan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\quanmb\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

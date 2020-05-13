@@ -9,5 +9,6 @@ namespace GymManagement.Infrastructure.Repositories
             Members = memberRepository;
         }
         public IMemberRepository Members { get; }
+
     }
 }

@@ -10,3 +10,15 @@ E:\Mini Project\Gym\GymManagement\GymManagement.Application\obj\Debug\netcoreapp
 E:\Mini Project\Gym\GymManagement\GymManagement.Application\obj\Debug\netcoreapp2.2\GymManagement.Application.csproj.CopyComplete
 E:\Mini Project\Gym\GymManagement\GymManagement.Application\obj\Debug\netcoreapp2.2\GymManagement.Application.dll
 E:\Mini Project\Gym\GymManagement\GymManagement.Application\obj\Debug\netcoreapp2.2\GymManagement.Application.pdb
+D:\DuAnCaNhan\GymManagement\GymManagement.Application\bin\Debug\netcoreapp2.2\GymManagement.Application.deps.json
+D:\DuAnCaNhan\GymManagement\GymManagement.Application\bin\Debug\netcoreapp2.2\GymManagement.Application.dll
+D:\DuAnCaNhan\GymManagement\GymManagement.Application\bin\Debug\netcoreapp2.2\GymManagement.Application.pdb
+D:\DuAnCaNhan\GymManagement\GymManagement.Application\bin\Debug\netcoreapp2.2\GymManagement.Domain.dll
+D:\DuAnCaNhan\GymManagement\GymManagement.Application\bin\Debug\netcoreapp2.2\GymManagement.Domain.pdb
+D:\DuAnCaNhan\GymManagement\GymManagement.Application\obj\Debug\netcoreapp2.2\GymManagement.Application.csprojAssemblyReference.cache
+D:\DuAnCaNhan\GymManagement\GymManagement.Application\obj\Debug\netcoreapp2.2\GymManagement.Application.csproj.CoreCompileInputs.cache
+D:\DuAnCaNhan\GymManagement\GymManagement.Application\obj\Debug\netcoreapp2.2\GymManagement.Application.AssemblyInfoInputs.cache
+D:\DuAnCaNhan\GymManagement\GymManagement.Application\obj\Debug\netcoreapp2.2\GymManagement.Application.AssemblyInfo.cs
+D:\DuAnCaNhan\GymManagement\GymManagement.Application\obj\Debug\netcoreapp2.2\GymManagement.Application.csproj.CopyComplete
+D:\DuAnCaNhan\GymManagement\GymManagement.Application\obj\Debug\netcoreapp2.2\GymManagement.Application.dll
+D:\DuAnCaNhan\GymManagement\GymManagement.Application\obj\Debug\netcoreapp2.2\GymManagement.Application.pdb

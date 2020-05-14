@@ -14,9 +14,9 @@ namespace GymManagement.Application.Members.Commands
         public DateTime ExpirationDate { get; set; }
         public bool Status { get; set; }
         public string Image { get; set; }
-        public int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
         //public string Email { get; set; }
         public bool Sex { get; set; }
-        public int TypeOfSeviceId { get; set; }
+        public int TypeOfServiceId { get; set; }
     }
 }

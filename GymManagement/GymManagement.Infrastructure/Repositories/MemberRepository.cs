@@ -41,9 +41,9 @@ namespace GymManagement.Infrastructure.Repositories
                 parameters.Add("@PhoneNumber", entity.PhoneNumber);
                 parameters.Add("@Email", entity.Email);
                 parameters.Add("@Sex", entity.Sex);
-                parameters.Add("@TypeOfSeviceId", entity.TypeOfSeviceId);
+                parameters.Add("@TypeOfServiceId", entity.TypeOfServiceId);
 
-                var id = await SqlMapper.ExecuteScalarAsync<int>(con, "sp_CreateOrUpdateMember", param: parameters, commandType: CommandType.StoredProcedure);
+                var id = await SqlMapper.ExecuteScalarAsync<int>(con, "sp_CreateMember", param: parameters, commandType: CommandType.StoredProcedure);
                 return id;
             }
             catch (Exception ex)
@@ -58,7 +58,7 @@ namespace GymManagement.Infrastructure.Repositories
             try
             {
                 DynamicParameters parameters = new DynamicParameters();
-                parameters.Add("@MaNV ", id);
+                parameters.Add("@Id ", id);
                 var result = await SqlMapper.ExecuteScalarAsync<int>(con, "sp_DeleteMenberById", param: parameters, commandType: CommandType.StoredProcedure);
                 return result;
             }
@@ -73,7 +73,7 @@ namespace GymManagement.Infrastructure.Repositories
         {
             DynamicParameters parameters = new DynamicParameters();
             parameters.Add("@Id", id);
-            Member Member = SqlMapper.Query<Member>(con, "LayPhongBanID", parameters, commandType: CommandType.StoredProcedure).FirstOrDefault();
+            Member Member = SqlMapper.Query<Member>(con, "sp_GetMemberById", parameters, commandType: CommandType.StoredProcedure).FirstOrDefault();
             return Member;
         }
 
@@ -97,7 +97,6 @@ namespace GymManagement.Infrastructure.Repositories
         {
             entity.ExpirationDate.ToString("dd-MM-yyyy");
             entity.DOB.ToString("dd-MM-yyyy");
-            entity.RegistrationDate = DateTime.Now;
 
             try
             {
@@ -112,9 +111,9 @@ namespace GymManagement.Infrastructure.Repositories
                 parameters.Add("@PhoneNumber", entity.PhoneNumber);
                 parameters.Add("@Email", entity.Email);
                 parameters.Add("@Sex", entity.Sex);
-                parameters.Add("@TypeOfSeviceId", entity.TypeOfSeviceId);
+                parameters.Add("@TypeOfServiceId", entity.TypeOfServiceId);
 
-                var id = await SqlMapper.ExecuteScalarAsync<int>(con, "sp_CreateOrUpdateMember", param: parameters, commandType: CommandType.StoredProcedure);
+                var id = await SqlMapper.ExecuteScalarAsync<int>(con, "sp_UpdateMember", param: parameters, commandType: CommandType.StoredProcedure);
                 return id;
             }
             catch (Exception ex)

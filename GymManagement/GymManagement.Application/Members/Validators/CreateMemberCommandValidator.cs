@@ -12,7 +12,7 @@ namespace GymManagement.Application.Members.Validators
             RuleFor(t => t.Status).NotNull();
             RuleFor(t => t.Address).NotNull();
             RuleFor(t => t.PhoneNumber).NotEmpty();
-            RuleFor(t => t.TypeOfSeviceId).NotNull();
+            RuleFor(t => t.TypeOfServiceId).NotNull();
             RuleFor(t => t.RegistrationDate).NotNull();
         }
 

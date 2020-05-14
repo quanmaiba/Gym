@@ -2,6 +2,7 @@
 {
     public class MemberDto
     {
+        public int Id { get; set; }
         public string CodeMember { get; set; }
         public string FullName { get; set; }
         public string DOBS { get; set; }
@@ -11,10 +12,10 @@
         public string ExpirationDate { get; set; }
         public string Status { get; set; }
         public string Image { get; set; }
-        public int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
         public string Email { get; set; }
         public string Gender { get; set; }
-        public int TypeOfSeviceId { get; set; }
+        public int TypeOfServiceId { get; set; }
         public string TypeOfServiceName { get; set; }
     }
 }

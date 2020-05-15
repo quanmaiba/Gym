@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "GymManagementAngular": {
+    "MyDogApp-SPA": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,12 +13,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/GymManagementAngular",
+            "outputPath": "dist/MyDogApp-SPA",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -43,7 +43,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -65,18 +64,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "GymManagementAngular:build"
+            "browserTarget": "MyDogApp-SPA:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "GymManagementAngular:build:production"
+              "browserTarget": "MyDogApp-SPA:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "GymManagementAngular:build"
+            "browserTarget": "MyDogApp-SPA:build"
           }
         },
         "test": {
@@ -113,15 +112,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "GymManagementAngular:serve"
+            "devServerTarget": "MyDogApp-SPA:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "GymManagementAngular:serve:production"
+              "devServerTarget": "MyDogApp-SPA:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "GymManagementAngular"
+    }
+  },
+  "defaultProject": "MyDogApp-SPA",
+  "cli": {
+    "analytics": false
+  }
 }

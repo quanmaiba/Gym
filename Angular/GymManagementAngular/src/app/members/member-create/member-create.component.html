@@ -1,1 +1,219 @@
-<p>member-create works!</p>
+<div class="row justify-content-center">
+    <div class="col-7">
+        <form [formGroup]="registerForm" (ngSubmit)="register()">
+            <h2 class="text-center text-primary">Register Member</h2>
+            <hr>
+
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label class="control-label" style="margin-right:10px">FullName </label>
+                        <input type="text" (keyup)=_keyPressCode(event.value) [ngClass]="{'is-invalid': registerForm.get('fullName').errors 
+                  && registerForm.get('fullName').touched}" class="form-control" formControlName="fullName" placeholder="FullName">
+                        <div class="invalid-feedback" *ngIf="registerForm.get('fullName').hasError('required') 
+                    && registerForm.get('fullName').touched">
+                            Password is required
+                        </div>
+                        <div class="invalid-feedback" *ngIf="registerForm.get('fullName').hasError('minlength') 
+                  && registerForm.get('fullName').touched">
+                            Password must be at least 4 characters
+                        </div>
+                        <div class="invalid-feedback" *ngIf="registerForm.get('fullName').hasError('maxlength') 
+                && registerForm.get('fullName').touched">
+                            Password cannot exceed 8 characters
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <div>
+                            <label class="control-label" style="margin-right:10px">Gender </label>
+                        </div>
+                        <div>
+                            <label class="radio-inline">
+                  <input class="mr-3" type="radio" value="true" formControlName="gender">Male
+                    </label>
+                            <label class="radio-inline ml-3">
+                    <input class="mr-3" type="radio" value="false" formControlName="gender">Female
+                    </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label class="control-label" style="margin-right:10px">CodeMember </label>
+                        <input type="text" disabled [ngClass]="{'is-invalid': registerForm.get('codeMember').errors 
+                  && registerForm.get('codeMember').touched}" class="form-control" formControlName="codeMember" placeholder="CodeMember">
+                        <div class="invalid-feedback" *ngIf="registerForm.get('codeMember').hasError('required') 
+                    && registerForm.get('codeMember').touched">
+                            CodeMember is required
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label class="control-label" style="margin-right:10px">TypeOfService </label>
+                        <input type="number" [ngClass]="{'is-invalid': registerForm.get('typeOfServiceId').errors 
+                  && registerForm.get('typeOfServiceId').touched}" class="form-control" formControlName="typeOfServiceId" placeholder="typeOfServiceId">
+                        <div class="invalid-feedback" *ngIf="registerForm.get('typeOfServiceId').hasError('required') 
+                    && registerForm.get('typeOfServiceId').touched">
+                            typeOfServiceId is required
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label class="control-label" style="margin-right:10px">Address </label>
+                        <input type="text" [ngClass]="{'is-invalid': registerForm.get('address').errors 
+                  && registerForm.get('address').touched}" class="form-control" formControlName="address" placeholder="Address">
+                        <div class="invalid-feedback" *ngIf="registerForm.get('address').hasError('required') 
+                    && registerForm.get('address').touched">
+                            address is required
+                        </div>
+                        <div class="invalid-feedback" *ngIf="registerForm.get('address').hasError('minlength') 
+                  && registerForm.get('address').touched">
+                            address must be at least 4 characters
+                        </div>
+                        <div class="invalid-feedback" *ngIf="registerForm.get('address').hasError('maxlength') 
+                && registerForm.get('address').touched">
+                            address cannot exceed 8 characters
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label class="control-label" style="margin-right:10px">Phone Number </label>
+                        <input type="text" [ngClass]="{'is-invalid': registerForm.get('phoneNumber').errors 
+                  && registerForm.get('phoneNumber').touched}" class="form-control" formControlName="phoneNumber" maxlength="10" (keypress)=_keyPress($event) placeholder="Phone Number">
+                        <div class="invalid-feedback" *ngIf="registerForm.get('phoneNumber').hasError('required') 
+                    && registerForm.get('phoneNumber').touched">
+                            phoneNumber is required
+                        </div>
+                        <!-- <div class="invalid-feedback" *ngIf="registerForm.get('phoneNumber').hasError('minlength') 
+                  && registerForm.get('phoneNumber').touched">
+                            phoneNumber must be at least 4 characters
+                        </div>
+                        <div class="invalid-feedback" *ngIf="registerForm.get('phoneNumber').hasError('maxlength') 
+                && registerForm.get('phoneNumber').touched">
+                            phoneNumber cannot exceed 8 characters
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label class="control-label" style="margin-right:10px">Date Of Birth </label>
+                        <input type="date" [ngClass]="{'is-invalid': registerForm.get('dob').errors 
+                  && registerForm.get('dob').touched}" class="form-control" formControlName="dob" placeholder="Date Of Birth">
+                        <div class="invalid-feedback" *ngIf="registerForm.get('dob').hasError('required') 
+                    && registerForm.get('dob').touched">
+                            Date Of Birth is required
+                        </div>
+                        <div class="invalid-feedback" *ngIf="registerForm.get('dob').hasError('minlength') 
+                  && registerForm.get('dob').touched">
+                            Date Of Birth is required must be at least 4 characters
+                        </div>
+                        <div class="invalid-feedback" *ngIf="registerForm.get('dob').hasError('maxlength') 
+                && registerForm.get('dob').touched">
+                            Date Of Birth is required cannot exceed 8 characters
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="form-group row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="control-label" style="margin-right:10px">Registration Date </label>
+                                <input type="date" [ngClass]="{'is-invalid': registerForm.get('registrationDate').errors 
+                          && registerForm.get('registrationDate').touched}" class="form-control" formControlName="registrationDate" placeholder="Registration Date">
+                                <div class="invalid-feedback" *ngIf="registerForm.get('registrationDate').hasError('required') 
+                            && registerForm.get('registrationDate').touched">
+                                    registrationDate is required
+                                </div>
+                                <div class="invalid-feedback" *ngIf="registerForm.get('registrationDate').hasError('minlength') 
+                          && registerForm.get('registrationDate').touched">
+                                    registrationDate must be at least 4 characters
+                                </div>
+                                <div class="invalid-feedback" *ngIf="registerForm.get('registrationDate').hasError('maxlength') 
+                        && registerForm.get('registrationDate').touched">
+                                    registrationDate cannot exceed 8 characters
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="control-label" style="margin-right:10px">Expiration Date </label>
+                                <input type="date" [ngClass]="{'is-invalid': registerForm.get('expirationDate').errors 
+                          && registerForm.get('expirationDate').touched}" class="form-control" formControlName="expirationDate" placeholder="Expiration Date">
+                                <div class="invalid-feedback" *ngIf="registerForm.get('expirationDate').hasError('required') 
+                            && registerForm.get('expirationDate').touched">
+                                    expirationDate is required
+                                </div>
+                                <div class="invalid-feedback" *ngIf="registerForm.get('expirationDate').hasError('minlength') 
+                          && registerForm.get('expirationDate').touched">
+                                    expirationDate must be at least 4 characters
+                                </div>
+                                <div class="invalid-feedback" *ngIf="registerForm.get('expirationDate').hasError('maxlength') 
+                        && registerForm.get('expirationDate').touched">
+                                    expirationDate cannot exceed 8 characters
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label class="control-label" style="margin-right:10px">Image</label>
+                        <input type="file" [ngClass]="{'is-invalid': registerForm.get('image').errors 
+                  && registerForm.get('image').touched}" class="form-control" formControlName="image" placeholder="Image">
+                        <div class="invalid-feedback" *ngIf="registerForm.get('image').hasError('required') 
+                    && registerForm.get('image').touched">
+                            Image is required
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <div>
+                            <label class="control-label" style="margin-right:10px">Status</label>
+                        </div>
+                        <div>
+                            <label class="radio-inline">
+                  <input class="mr-3" type="radio" value="true" formControlName="status">Online
+                    </label>
+                            <label class="radio-inline ml-3">
+                    <input class="mr-3" type="radio" value="false" formControlName="status">Offline
+                    </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group text-center">
+                <button class="btn btn-success" [disabled]="!registerForm.valid" type="submit">Register</button>
+                <button class="btn btn-danger" type="button" (click)="cancel()">Cancel</button>
+            </div>
+
+        </form>
+    </div>
+</div>

@@ -1,1 +1,44 @@
-<p>member-list works!</p>
+<h2 class="text-center">List Member</h2>
+
+<table datatable  class=" table row-border table-striped hover" *ngIf="this.temp">
+  <thead>
+    <tr>
+      <th>Full Name</th>
+      <th>Code Member</th>
+      <th>Sex</th>
+      <th>Image</th>
+      <th>Date Of Birth</th>
+      <th>Address</th>
+      <th>Phone Number</th> 
+      <th>Registration Date</th>
+      <th>Expiration Date</th>
+      <th>Status</th>
+     <th><a [routerLink]="['addoredit']" ><i class="fas fa-plus-circle"></i> Create</a> </th> 
+    </tr>
+  </thead>
+  <tbody *ngIf="listMember?.length != 0">
+      <tr *ngFor="let member of listMember">
+          <td>{{ member.fullName }}</td>
+          <td>{{ member.codeMember }}</td>
+          <td>{{ member.sex }}</td>
+          <td>{{ member.image  }}</td>
+          <td>{{ member.dob }}</td>
+          <td>{{ member.address }}</td>
+          <td>{{ member.phoneNumber }}</td>
+          <td>{{ member.registrationDate }}</td>
+          <td>{{ member.expirationDate }}</td>  
+          <td>{{ member.status }}</td>    
+          <td><a href = 'javascript:; ' ><i class="fas fa-check"></i> Change </a>   
+            <a href = 'javascript:; ' ><i class="fa fa-plus create-btn"></i> Edit   </a>
+            <a href = 'javascript:; ' ><i class="fas fa-trash-alt"></i> Delete </a>
+          </td>                       
+      </tr>
+  </tbody>
+
+  <tbody *ngIf="listMember?.length == 0">
+    <tr>
+      <td colspan="3" class="no-data-available">No data!</td>
+    </tr>
+  <tbody>
+
+</table>

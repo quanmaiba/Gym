@@ -20,6 +20,7 @@ namespace GymManagement.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
             services.AddApplication();
             services.AddInfrastructure();
             services.AddControllers();
@@ -41,6 +42,8 @@ namespace GymManagement.Api
             app.UseSwaggerUi3();
 
             app.UseHttpsRedirection();
+            app.UseCors(x => x.WithOrigins("http://localhost:4200")
+               .AllowAnyHeader().AllowAnyMethod().AllowCredentials());
 
             app.UseRouting();
 

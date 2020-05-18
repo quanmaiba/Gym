@@ -1,21 +1,30 @@
 ﻿using GymManagement.Application.Members.Commands;
 using GymManagement.Application.Members.Dto;
 using GymManagement.Application.Members.Queries;
+using GymManagement.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace GymManagement.Api.Controllers
 {
+
     [Route("api/[Controller]")]
     [ApiController]
     public class MembersController : ApiController
     {
         [HttpPost]
         [Route("Create")]
-        public async Task<ActionResult<int>> Create(CreateMemberCommand command)
+        public async Task<ActionResult<int>> Create([FromBody] CreateMemberCommand command)
         {
             return await Mediator.Send(command);
+        }
+
+        [HttpPost]
+        [Route("CreateMember")]
+        public async Task<ActionResult<int>> CreateMember([FromBody]Member command)
+        {
+            return Ok();
         }
 
         [HttpGet]

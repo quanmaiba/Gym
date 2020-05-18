@@ -1,3 +1,4 @@
+import { MemberAddoreditComponent } from './members/member-addoredit/member-addoredit.component';
 import { MemberCreateComponent } from './members/member-create/member-create.component';
 
 import { Routes } from '@angular/router';
@@ -11,18 +12,12 @@ import { MemberEditComponent } from './members/member-edit/member-edit.component
 import { NotfoundComponent } from './notfound/notfound.component';
 
 export const appRoutes: Routes = [
-    { path: '', component: MemberCreateComponent},
-    {
-        path: '',
-       
-        children: [
-            { path: 'members', component: MemberListComponent,
-                resolve: {users: MemberListResolver}},
-            { path: 'members/:id', component: MemberDetailComponent,
-                resolve: {user: MemberDetailResolver}},                     
-        ]
-    },
-    { path: '', redirectTo: 'home', pathMatch: 'full'},
+    { path: 'members', component: MemberListComponent},
+    { path: 'members/list', component: MemberListComponent},
+    { path: 'members/edit/:id', component: MemberAddoreditComponent},
+    { path: 'members/create', component: MemberAddoreditComponent},
+    { path: 'members/detail', component: MemberDetailComponent},
+    { path: '', redirectTo: 'members', pathMatch: 'full'},
     { path: '**', component: NotfoundComponent}
 ];
 

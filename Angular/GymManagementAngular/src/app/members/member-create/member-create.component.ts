@@ -1,3 +1,4 @@
+import { BlogPostService } from './../../services/blog-post.service';
 import { MemberService } from './../../_services/member.service';
 import { AlertifyjsService } from './../../_services/alertifyjs.service';
 import { Member } from './../../_models/member';
@@ -18,7 +19,7 @@ export class MemberCreateComponent implements OnInit {
   submitted = false;
   event : string= ''
   constructor( private router: Router, private alertify: AlertifyjsService,
-              private memberService :MemberService, private fb: FormBuilder) { }
+              private memberService :MemberService, private fb: FormBuilder, private blogPostService: BlogPostService) { }
 
   ngOnInit(): void {
     this.bsConfig = {
@@ -29,15 +30,15 @@ export class MemberCreateComponent implements OnInit {
 
   createRegisterForm() {
     this.registerForm = this.fb.group({
-      gender: [false, Validators.required],
-      codeMember: ['',],
+      sex: [false, Validators.required],
+      codeMember: ['Hehe',],
       fullName: ['', Validators.required],
       dob: [null, Validators.required],
       address: ['', Validators.required],
       registrationDate: ['', Validators.required],
       expirationDate: ['', Validators.required],
       status: [true, Validators.required],
-      image: ['', Validators.required],
+      image: [''],
       phoneNumber: ['', Validators.required],
       typeOfServiceId: [null, Validators.required]
     });
@@ -55,27 +56,20 @@ export class MemberCreateComponent implements OnInit {
   console.log(event)
   }
 
-
-
   get f() { 
-    return this.registerForm.controls;
-    
+    return this.registerForm.controls;   
   }
 
-  passwordMatchValidator(g: FormGroup) {
-    return g.get('password').value === g.get('confirmPassword').value ? null : {'mismatch': true};
-  }
-
-  register() {
-
-    console.log(this.registerForm.value)
+  register() { 
     this.submitted = true;
-
+    
     if (this.registerForm.valid) {
-      this.member = Object.assign({}, this.registerForm.value);
+      this.member =  this.registerForm.value;
+      this.registerForm.value.sex = true 
+      this.member.status=true;
       this.memberService.createMember(this.member).subscribe(() => {
-        this.router.navigate(['/members']);
-        this.alertify.success('registration successful');
+        // this.router.navigate(['/members']);
+         this.alertify.success('registration successful');
       }, error => {
           this.alertify.error(error);
       });

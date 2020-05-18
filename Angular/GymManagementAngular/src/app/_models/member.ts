@@ -10,7 +10,7 @@ export interface Member {
     image: string;
     phoneNumber: string;
     email?: string;
-    gender: boolean;
+    sex: boolean;
     typeOfServiceId: number;
     typeOfServiceName: string;
 }

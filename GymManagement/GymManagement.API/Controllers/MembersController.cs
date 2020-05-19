@@ -48,7 +48,7 @@ namespace GymManagement.Api.Controllers
         }
 
         [HttpDelete]
-        [Route("Delete")]
+        [Route("Delete/{id}")]
         public async Task<ActionResult<int>> Delete(int id)
         {
             return await Mediator.Send(new DeleteMemberCommand { Id = id });

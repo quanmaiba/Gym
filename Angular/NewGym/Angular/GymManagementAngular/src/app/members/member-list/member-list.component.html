@@ -1,0 +1,52 @@
+<h2 class="text-center">List Member</h2>
+<div class="row justify-content-center">
+  <div class="col-10">
+    <table datatable class=" table row-border table-striped hover" *ngIf="this.temp">
+      <thead>
+        <tr>
+          <th>Full Name</th>
+          <th>Code Member</th>
+          <th>Sex</th>
+          <th>Image</th>
+          <th>Date Of Birth</th>
+          <th>Address</th>
+          <th>Phone Number</th>
+          <th>Registration Date</th>
+          <th>Expiration Date</th>
+          <th>Status</th>
+          <th class="text-center text-primary"><a [routerLink]="['createMember']" ><i class="fas fa-plus-circle"></i> Create</a></th>
+        </tr>
+      </thead>
+      <tbody *ngIf="listMember?.length != 0">
+        <tr *ngFor="let member of listMember">
+          <td>{{ member.fullName }}</td>
+          <td>{{ member.codeMember }}</td>
+          <td>{{ member.sex }}</td>
+          <td>
+            <img *ngIf="member.image" src={{member.image}} alt="null" width="50px" height="50px">
+            <img *ngIf="member.image == 'null'" src="./../../../assets/images/default.png" alt="null" width="50px" height="50px">
+          </td>
+          <td>{{ member.dob }}</td>
+          <td>{{ member.address }}</td>
+          <td>{{ member.phoneNumber }}</td>
+          <td>{{ member.registrationDate }}</td>
+          <td>{{ member.expirationDate }}</td>
+          <td>{{ member.status }}</td>
+          <td>
+            <a href='javascript:; '><i class="fas fa-check"></i> Change </a>
+            <a href='javascript:; '><i class="fas fa-info-circle"></i> Details </a>
+            <a [routerLink]="['/members/edit/', member.id]"><i class="fas fa-user-edit"></i> Edit </a>
+            <a [routerLink]="" (click)="delete(member.id,member.fullName)"><i class="fas fa-trash-alt"></i> Delete </a>
+          </td>
+        </tr>
+      </tbody>
+
+      <tbody *ngIf="listMember?.length == 0">
+        <tr>
+          <td colspan="3" class="no-data-available">No data!</td>
+        </tr>
+      <tbody>
+
+    </table>
+  </div>
+</div>
